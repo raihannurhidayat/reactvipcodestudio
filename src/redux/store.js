@@ -4,7 +4,7 @@ import cartReducer from "./slices/cartSlice";
 const store = configureStore({
   reducer: { cart: cartReducer },
 });
-console.log("On Create Store ", store.getState());
+// console.log("On Create Store ", store.getState());
 store.subscribe(() => {
   console.log("Store create ", store.getState());
 });
